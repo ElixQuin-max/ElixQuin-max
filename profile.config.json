@@ -1,5 +1,5 @@
 {
-  "_comment": "Edita SOLO este archivo y ejecuta: python scripts/generate.py  (o deja que el workflow lo haga al hacer push)",
+  "_comment": "En caso de querer usarlo editar solo este archivo y ejecuta: python scripts/generate.py",
   "github_username": "ElixQuin-max",
   "name": "Andrés Felipe Quintero",
   "short_name": "Eli",
@@ -9,12 +9,12 @@
   "timezone": "UTC-5 · Bogotá",
   "mission": "crear software útil y escalable",
   "status_line": "status: aprendiendo siempre",
-  "footer": "Hecho con 💖 y mucho café desde Colombia",
+  "footer": "Hecho con 💖 y mucho sueño desde Colombia",
   "typing_lines": [
     "Eli — Full-Stack Developer",
     "JavaScript | TypeScript | Python | SQL",
     "Node.js • MySQL • MongoDB • Docker",
-    "Código - Café - Música - Aprender - Crear"
+    "Código - Café - Música - Aprender - Crear - Juegos"
   ],
   "whoami_expertise": [
     [
@@ -100,7 +100,7 @@
     [
       1,
       "email",
-      "andrescrack86@gmail.com"
+      "andresllyx@gmail.com"
     ],
     [
       1,
@@ -200,14 +200,14 @@
     },
     {
       "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/TU_PERFIL",
+      "url": "https://www.linkedin.com/in/andres-felipe-quintero-53b4603ab/",
       "color": "0A66C2",
       "logo": "linkedin",
       "logoColor": "white"
     },
     {
       "label": "Email",
-      "url": "mailto:andrescrack86@gmail.com",
+      "url": "mailto:andresllyx@gmail.com",
       "color": "f78ca0",
       "logo": "gmail",
       "logoColor": "1a1a2e"
