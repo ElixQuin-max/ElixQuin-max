@@ -12,7 +12,7 @@
 <br>
 
 <a href="https://github.com/ElixQuin-max">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=F78CA0&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Eli%20%E2%80%94%20Full-Stack%20Developer%3BJavaScript%20%7C%20TypeScript%20%7C%20Python%20%7C%20SQL%3BNode.js%20%E2%80%A2%20MySQL%20%E2%80%A2%20MongoDB%20%E2%80%A2%20Docker%3BC%C3%B3digo%20-%20Caf%C3%A9%20-%20M%C3%BAsica%20-%20Aprender%20-%20Crear" alt="Texto animado del perfil">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=F78CA0&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Eli%20%E2%80%94%20Full-Stack%20Developer%3BJavaScript%20%7C%20TypeScript%20%7C%20Python%20%7C%20SQL%3BNode.js%20%E2%80%A2%20MySQL%20%E2%80%A2%20MongoDB%20%E2%80%A2%20Docker%3BC%C3%B3digo%20-%20Caf%C3%A9%20-%20M%C3%BAsica%20-%20Aprender%20-%20Crear%20-%20Juegos" alt="Texto animado del perfil">
 </a>
 
 <img src="https://komarev.com/ghpvc/?username=ElixQuin-max&style=flat&color=f78ca0&label=profile+views" alt="profile views">
@@ -98,7 +98,7 @@
 <a href="https://github.com/ElixQuin-max">
   <img src="https://img.shields.io/badge/GitHub-c7a4f5?style=for-the-badge&logo=github&logoColor=1a1a2e" alt="GitHub">
 </a>&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/TU_PERFIL">
+<a href="https://www.linkedin.com/in/andres-felipe-quintero-53b4603ab/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>&nbsp;&nbsp;
 <a href="mailto:andresllyx@gmail.com">
@@ -111,5 +111,5 @@
 <br>
 
 <div align="center">
-<sub>Hecho con 💖 y mucho café desde Colombia · @ElixQuin-max</sub>
+<sub>Hecho con 💖 y mucho sueño desde Colombia · @ElixQuin-max</sub>
 </div>
