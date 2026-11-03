@@ -3,9 +3,9 @@
 <!-- BANNER ANIMADO (generado por scripts/generate.py) -->
 <a href="https://github.com/ElixQuin-max">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-    <img src="assets/banner-light.svg" width="960" alt="Perfil de Andrés Felipe Quintero, Full-Stack Developer">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.7d856824.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.2c6c77f1.svg">
+    <img src="assets/banner-light.2c6c77f1.svg" width="960" alt="Perfil de Andrés Felipe Quintero, Full-Stack Developer">
   </picture>
 </a>
 

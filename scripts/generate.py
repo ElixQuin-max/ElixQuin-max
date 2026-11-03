@@ -18,6 +18,7 @@ quitado, de hombros hacia arriba). Si no existe, se usan tus iniciales.
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import math
@@ -56,6 +57,8 @@ TRAVELLERS = 800
 HOLD_PARTICLES = 2200
 MAX_PORTRAIT_DOTS = 18000
 INTRO_S, TRANSITION_S, HOLD_S, PORTRAIT_S = 3.2, 1.3, 3.6, 3.0
+
+BANNERS: dict[str, str] = {}
 
 THEMES = {
     "dark": dict(bg="#0A0F1E", panel="#0D1628", panel2="#101B30", line="#25344C",
@@ -514,9 +517,9 @@ def render_readme() -> str:
 <!-- BANNER ANIMADO (generado por scripts/generate.py) -->
 <a href="https://github.com/{u}">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-    <img src="assets/banner-light.svg" width="960" alt="Perfil de {esc(CFG['name'])}, {esc(CFG['role'])}">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/{BANNERS['dark']}">
+    <source media="(prefers-color-scheme: light)" srcset="assets/{BANNERS['light']}">
+    <img src="assets/{BANNERS['light']}" width="960" alt="Perfil de {esc(CFG['name'])}, {esc(CFG['role'])}">
   </picture>
 </a>
 
@@ -605,12 +608,18 @@ def render_readme() -> str:
 def main() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     logos = {name: load_logo(name) for name in CFG["banner_logos"]}
+    # El nombre del banner lleva un hash del contenido: GitHub cachea las imágenes
+    # por URL, así que un nombre nuevo obliga a mostrar siempre la versión actual.
+    for old in ASSETS.glob("banner-*.svg"):
+        old.unlink()
     for i, theme in enumerate(THEMES):
         rng = np.random.default_rng(SEED + i)
         portrait = portrait_points(theme, rng)
         svg = render_banner(theme, portrait, logos, rng)
-        out = ASSETS / f"banner-{theme}.svg"
+        digest = hashlib.sha1(svg.encode()).hexdigest()[:8]
+        out = ASSETS / f"banner-{theme}.{digest}.svg"
         out.write_text(svg, encoding="utf-8")
+        BANNERS[theme] = out.name
         print(f"{out.relative_to(ROOT)}: {out.stat().st_size / 1024:.0f} KiB, {len(portrait):,} puntos")
     (ASSETS / "whoami.svg").write_text(render_whoami(), encoding="utf-8")
     for key, stem in (("skills_radar", "radar"), ("langs_radar", "radar-langs")):
