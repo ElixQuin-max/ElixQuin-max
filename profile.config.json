@@ -10,6 +10,12 @@
   "mission": "crear software útil y escalable",
   "status_line": "status: aprendiendo siempre",
   "footer": "Hecho con 💖 y mucho sueño desde Colombia",
+  "portrait_style": "silhouette",
+  "portrait_crop": [
+    1.0,
+    0.0
+  ],
+  "silhouette_threshold": 34,
   "typing_lines": [
     "Eli — Full-Stack Developer",
     "JavaScript | TypeScript | Python | SQL",
@@ -96,6 +102,11 @@
       1,
       "github",
       "{github}"
+    ],
+    [
+      1,
+      "linkedin",
+      "/in/andres-felipe-quintero"
     ],
     [
       1,

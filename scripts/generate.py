@@ -54,7 +54,7 @@ SANS = "ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
 SEED = 2718
 TRAVELLERS = 800
 HOLD_PARTICLES = 2200
-MAX_PORTRAIT_DOTS = 16000
+MAX_PORTRAIT_DOTS = 18000
 INTRO_S, TRANSITION_S, HOLD_S, PORTRAIT_S = 3.2, 1.3, 3.6, 3.0
 
 THEMES = {
@@ -86,9 +86,10 @@ def source_image() -> Image.Image:
     if PORTRAIT.exists():
         src = Image.open(PORTRAIT).convert("RGBA")
         w, h = src.size
-        cw = int(w * 0.62)
+        frac, top_frac = CFG.get("portrait_crop", [0.62, 0.06])
+        cw = int(w * frac)
         ch = int(cw * 340 / 300)
-        left, top = (w - cw) // 2, int(h * 0.06)
+        left, top = (w - cw) // 2, int(h * top_frac)
         return src.crop((left, top, left + cw, min(h, top + ch))).resize((300, 340), Image.Resampling.LANCZOS)
     img = Image.new("RGBA", (300, 340), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
@@ -135,7 +136,40 @@ def dither(gray: np.ndarray) -> np.ndarray:
     return out
 
 
+def silhouette_bits() -> np.ndarray:
+    """Para fotos a contraluz: silueta oscura sobre fondo claro.
+
+    El cuerpo se rellena con puntos suaves, las zonas iluminadas (cara) más
+    densas, y el contorno se marca como un borde de luz.
+    """
+    from scipy import ndimage
+
+    g = np.asarray(ImageOps.grayscale(source_image().convert("RGB")), dtype=np.float32)
+    thr = float(CFG.get("silhouette_threshold", 34))
+    # Se trabaja con bordes replicados para que el marco de la foto no cuente como contorno.
+    pad = 8
+    raw = np.pad(g < thr, pad, mode="edge")
+    lab, count = ndimage.label(ndimage.binary_opening(raw, iterations=2))
+    if not count:
+        raise SystemExit("No se encontró la silueta: sube silhouette_threshold en el config.")
+    sizes = ndimage.sum(raw, lab, range(1, count + 1))
+    mask = lab == (1 + int(np.argmax(sizes)))
+    mask = ndimage.binary_fill_holes(ndimage.binary_closing(mask, iterations=2))
+    edge = (mask & ~ndimage.binary_erosion(mask, iterations=2))[pad:-pad, pad:-pad]
+    mask = mask[pad:-pad, pad:-pad]
+    lit = np.clip((g - 7) / 20, 0, 1)
+    tone = np.where(mask, 0.08 + 0.55 * lit ** 0.8, 0)
+    tone = np.maximum(tone, edge * 0.95)
+    return dither(tone * 255)
+
+
 def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
+    if PORTRAIT.exists() and CFG.get("portrait_style") == "silhouette":
+        ys, xs = np.where(silhouette_bits())
+        pts = np.column_stack((94 + xs, 154 + ys)).astype(np.float32)
+        if len(pts) > MAX_PORTRAIT_DOTS:
+            pts = pts[rng.choice(len(pts), MAX_PORTRAIT_DOTS, replace=False)]
+        return pts
     crop = source_image()
     alpha = np.asarray(crop.getchannel("A"), dtype=np.float32) / 255.0
     # Las iniciales (texto claro con alfa) se procesan igual en ambos temas.
