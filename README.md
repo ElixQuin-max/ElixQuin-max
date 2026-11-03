@@ -12,7 +12,7 @@
 <br>
 
 <a href="https://github.com/ElixQuin-max">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=F78CA0&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Eli%20%E2%80%94%20Full-Stack%20Developer%3BFrontend%20%7C%20Backend%20%7C%20Bases%20de%20datos%3BConstruyendo%20Anthora%20%E2%80%94%20SaaS%20full-stack%3BC%C3%B3digo%20-%20Caf%C3%A9%20-%20M%C3%BAsica%20-%20Aprender%20-%20Crear" alt="Texto animado del perfil">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=F78CA0&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Eli%20%E2%80%94%20Full-Stack%20Developer%3BJavaScript%20%7C%20TypeScript%20%7C%20Python%20%7C%20SQL%3BNode.js%20%E2%80%A2%20MySQL%20%E2%80%A2%20MongoDB%20%E2%80%A2%20Docker%3BC%C3%B3digo%20-%20Caf%C3%A9%20-%20M%C3%BAsica%20-%20Aprender%20-%20Crear" alt="Texto animado del perfil">
 </a>
 
 <img src="https://komarev.com/ghpvc/?username=ElixQuin-max&style=flat&color=f78ca0&label=profile+views" alt="profile views">
@@ -41,23 +41,23 @@
   </thead>
   <tbody>
     <tr>
-      <td width="50%" valign="top"><code>├─ ✦ frontend:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,nextjs,tailwind" alt="HTML · CSS · JavaScript · TypeScript · React · Next.js · Tailwind"><br>
-        <sub><code>HTML · CSS · JavaScript · TypeScript · React · Next.js · Tailwind</code></sub>
+      <td width="50%" valign="top"><code>├─ ✦ languages:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=javascript,typescript,python" alt="JavaScript · TypeScript · Python · SQL"><br>
+        <sub><code>JavaScript · TypeScript · Python · SQL</code></sub>
       </td>
-      <td width="50%" valign="top"><code>├─ ⚙ backend:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=nodejs,express,python,fastapi" alt="Node.js · Express · Python · FastAPI"><br>
-        <sub><code>Node.js · Express · Python · FastAPI</code></sub>
+      <td width="50%" valign="top"><code>├─ ◈ frontend:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=html,css" alt="HTML · CSS"><br>
+        <sub><code>HTML · CSS</code></sub>
       </td>
     </tr>
     <tr>
-      <td width="50%" valign="top"><code>├─ ▣ databases:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,prisma,supabase" alt="PostgreSQL · MySQL · MongoDB · Prisma · Supabase"><br>
-        <sub><code>PostgreSQL · MySQL · MongoDB · Prisma · Supabase</code></sub>
+      <td width="50%" valign="top"><code>├─ ▣ backend_databases:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=nodejs,mysql,mongodb" alt="Node.js · MySQL · MongoDB"><br>
+        <sub><code>Node.js · MySQL · MongoDB</code></sub>
       </td>
-      <td width="50%" valign="top"><code>╰─ ☁ devops_tools:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,vercel,vscode" alt="Docker · Git · GitHub · GitHub Actions · Vercel · VS Code"><br>
-        <sub><code>Docker · Git · GitHub · GitHub Actions · Vercel · VS Code</code></sub>
+      <td width="50%" valign="top"><code>╰─ ⚙ tools:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=git,github,docker,vscode" alt="Git · GitHub · Docker · VS Code"><br>
+        <sub><code>Git · GitHub · Docker · VS Code</code></sub>
       </td>
     </tr>
   </tbody>
