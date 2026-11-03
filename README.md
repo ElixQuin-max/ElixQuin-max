@@ -101,7 +101,7 @@
 <a href="https://www.linkedin.com/in/TU_PERFIL">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>&nbsp;&nbsp;
-<a href="mailto:andrescrack86@gmail.com">
+<a href="mailto:andresllyx@gmail.com">
   <img src="https://img.shields.io/badge/Email-f78ca0?style=for-the-badge&logo=gmail&logoColor=1a1a2e" alt="Email">
 </a>
 
