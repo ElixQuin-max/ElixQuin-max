@@ -1,0 +1,100 @@
+{
+  "_comment": "Edita SOLO este archivo y ejecuta: python scripts/generate.py  (o deja que el workflow lo haga al hacer push)",
+
+  "github_username": "ElixQuin-max",
+  "name": "Andrés Felipe Quintero",
+  "short_name": "Eli",
+  "role": "Full-Stack Developer",
+  "location": "Colombia",
+  "flag": "🇨🇴",
+  "timezone": "UTC-5 · Bogotá",
+  "mission": "crear productos SaaS escalables",
+  "status_line": "status: aprendiendo siempre",
+  "footer": "Hecho con 💖 y mucho café desde Colombia",
+
+  "typing_lines": [
+    "Eli — Full-Stack Developer",
+    "Frontend | Backend | Bases de datos",
+    "Construyendo Anthora — SaaS full-stack",
+    "Código - Café - Música - Aprender - Crear"
+  ],
+
+  "whoami_expertise": [
+    ["frontend/", "React · Next.js · TypeScript"],
+    ["backend/",  "Node.js · APIs REST · PostgreSQL"]
+  ],
+
+  "banner_yaml": [
+    [0, "profile", ""],
+    [1, "subject", "Andrés Felipe Quintero (Eli)"],
+    [1, "role", "Full-Stack Developer"],
+    [1, "origin", "Colombia"],
+    [1, "focus", "SaaS · Web Apps · APIs"],
+    [1, "building", "Anthora"],
+    [1, "status", "Estudiante universitario · Builder"],
+    [0, "stack", ""],
+    [1, "frontend", "React · Next.js · TypeScript"],
+    [1, "backend", "Node.js · Express · REST"],
+    [1, "databases", "PostgreSQL · MySQL · MongoDB"],
+    [1, "devops", "Docker · Git · GitHub Actions"],
+    [1, "data", "Python · Probabilidad y Estadística"],
+    [0, "contact", ""],
+    [1, "github", "{github}"],
+    [1, "email", "andrescrack86@gmail.com"],
+    [1, "timezone", "UTC-5 · Bogotá"]
+  ],
+
+  "banner_logos": ["react", "typescript", "nodedotjs", "postgresql"],
+
+  "tech_stack": [
+    {
+      "key": "✦ frontend",
+      "icons": "html,css,javascript,typescript,react,nextjs,tailwind",
+      "names": "HTML · CSS · JavaScript · TypeScript · React · Next.js · Tailwind"
+    },
+    {
+      "key": "⚙ backend",
+      "icons": "nodejs,express,python,fastapi",
+      "names": "Node.js · Express · Python · FastAPI"
+    },
+    {
+      "key": "▣ databases",
+      "icons": "postgres,mysql,mongodb,prisma,supabase",
+      "names": "PostgreSQL · MySQL · MongoDB · Prisma · Supabase"
+    },
+    {
+      "key": "☁ devops_tools",
+      "icons": "docker,git,github,githubactions,vercel,vscode",
+      "names": "Docker · Git · GitHub · GitHub Actions · Vercel · VS Code"
+    }
+  ],
+
+  "skills_radar": {
+    "title": "Full-Stack Skill Radar",
+    "axes": [
+      ["Frontend", 85],
+      ["Backend & APIs", 80],
+      ["Bases de datos", 82],
+      ["DevOps & Deploy", 65],
+      ["UI / UX", 75],
+      ["Data & Estadística", 70]
+    ]
+  },
+
+  "langs_radar": {
+    "title": "Language Stack",
+    "axes": [
+      ["TypeScript", 85],
+      ["JavaScript", 90],
+      ["Python", 75],
+      ["SQL", 82],
+      ["HTML/CSS", 88]
+    ]
+  },
+
+  "socials": [
+    {"label": "GitHub",   "url": "https://github.com/{github}",       "color": "c7a4f5", "logo": "github",   "logoColor": "1a1a2e"},
+    {"label": "LinkedIn", "url": "https://www.linkedin.com/in/TU_PERFIL", "color": "0A66C2", "logo": "linkedin", "logoColor": "white"},
+    {"label": "Email",    "url": "mailto:andrescrack86@gmail.com",       "color": "f78ca0", "logo": "gmail",    "logoColor": "1a1a2e"}
+  ]
+}
